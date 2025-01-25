@@ -57,14 +57,14 @@ const App = () => {
             <motion.img
               src={Logo}
               alt="Logo"
-              className="h-64 w-auto"
+              className="h-40 w-40"
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.5 }}
             />
-            <div className="flex flex-col">
+            <div className="flex flex-col text-xl">
               <motion.h1
-                className="block text-gray-800 text-2xl md:text-4xl font-bold"
+                className="text-gray-800 text-xl md:text-2xl font-bold"
                 initial={{ x: -50, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.6 }}
@@ -72,7 +72,7 @@ const App = () => {
                 Ресторан
               </motion.h1>
               <motion.h1
-                className="text-2xl md:text-4xl font-bold"
+                className="text-sm md:text-4xl font-bold"
                 initial={{ x: -50, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.6 }}
@@ -83,6 +83,15 @@ const App = () => {
           </div>
         </div>
       </header>
+
+      <motion.h2
+            className="flex justify-center items-center text-center text-3xl text-orange-500 font-bold my-6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            Доброе утро любимая!
+          </motion.h2>
 
       <div className="flex flex-col flex-grow bg-gradient-to-r from-orange-50 to-orange-100">
         <motion.a
